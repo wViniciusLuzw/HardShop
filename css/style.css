@@ -19,7 +19,32 @@
 }
 
 .card_1{
+    padding: 2%;
     width: calc(20% - 15px);
     background-color: black;
     box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.btn_compra{
+    border-radius: 10px;
+    color: white;
+    padding: 3%;
+    background-color: blue;
+}
+
+.card_text{
+    color: white;
+}
+
+.card_title{
+    color: white;
+}
+
+.info{
+    padding: 1%;
+    border-radius: 15px;
+    background-color: burlywood;
+    margin: 2%;
+    width: calc(100% - 2);
 }
