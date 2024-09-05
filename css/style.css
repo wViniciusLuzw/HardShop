@@ -4,9 +4,22 @@
 }
 
 .img_logo{
-    width: 17%;
+    width: 25%;
 }
 
 .img_banner{
     width: 100%;
+}
+
+.cards_1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.card_1{
+    width: calc(20% - 15px);
+    background-color: black;
+    box-sizing: border-box;
 }
