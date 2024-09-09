@@ -1,3 +1,53 @@
+:root {
+    --header-height: 3.5rem;
+  
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --black-color: hsl(220, 24%, 12%);
+    --black-color-light: hsl(220, 24%, 15%);
+    --black-color-lighten: hsl(220, 20%, 18%);
+    --white-color: #fff;
+    --body-color: hsl(220, 100%, 97%);
+  
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Montserrat", sans-serif;
+    --normal-font-size: .938rem;
+  
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-semi-bold: 600;
+  
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+  }
+
+  .container{
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+  }
+
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--black-color);
+    box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+    z-index: var(--z-fixed);
+  }
+
+  .nav{
+    height: var(--header-height);
+  }
+
+  
+
+
+
+
+
 .logo{
     margin-left: 5%;
     padding: 0.5%;
@@ -11,40 +61,3 @@
     width: 100%;
 }
 
-.cards_1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 15px;
-}
-
-.card_1{
-    padding: 2%;
-    width: calc(20% - 15px);
-    background-color: black;
-    box-sizing: border-box;
-    border-radius: 15px;
-}
-
-.btn_compra{
-    border-radius: 10px;
-    color: white;
-    padding: 3%;
-    background-color: blue;
-}
-
-.card_text{
-    color: white;
-}
-
-.card_title{
-    color: white;
-}
-
-.info{
-    padding: 1%;
-    border-radius: 15px;
-    background-color: burlywood;
-    margin: 2%;
-    width: calc(100% - 2);
-}
