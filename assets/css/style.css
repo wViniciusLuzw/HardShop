@@ -1,3 +1,75 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+* {
+    /*Resetando algumas definições*/
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+header{
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar {
+    /*Alinhar itens*/
+    display: flex;
+    justify-content: space-between;
+    /*Trabalhando com a responsividade*/
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    /*Alinhar logo*/
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    /*Configurando o h1 da classe logo*/
+    color: white;
+}
+
+.nav-list{
+    /*guias do menu*/
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-itens {
+    margin: 0px 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+}
+
+.login-button{
+    border: none;
+    background-color: #0187a7;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.login-button a{
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.bt_entre{
+    background-color: #0187a7;
+    border: none;
+}
