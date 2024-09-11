@@ -8,6 +8,10 @@
     font-family: "Inter", sans-serif;
 }
 
+h1 {
+    font-size: 1.5rem;
+}
+
 header{
     background-color: #24252a;
     box-shadow: 0px 3px 10px #464646;
@@ -49,27 +53,85 @@ header{
 }
 
 .nav-link {
+    margin-top: 15%;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: white;
     font-weight: 400;
 }
 
-.login-button{
+.login-button button{
     border: none;
     background-color: #0187a7;
     padding: 10px 15px;
     border-radius: 5px;
 }
 
-.login-button a{
+.login-button button a{
     border: none;
     text-decoration: none;
     color: white;
     font-weight: 500;
 }
 
-.bt_entre{
+/*.bt_entre{
     background-color: #0187a7;
     border: none;
+}*/
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-itens {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-itens {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
 }
